@@ -40,11 +40,9 @@ int right = len - 1;
         count++;
         check = 1;
         break;
-      }
-      else if (arr[middle] + arr[i] > value) {
+      } else if (arr[middle] + arr[i] > value) {
         right = middle - 1;
-      }
-      else if (arr[middle] + arr[i] < value) {
+      } else if (arr[middle] + arr[i] < value) {
         left = middle + 1;
       }
       middle = (left + right) / 2;
