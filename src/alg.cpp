@@ -7,7 +7,7 @@ int count = 0;
         count++;
     }
   }
-  return counter;
+  return count;
 }
 
 int countPairs2(int *arr, int len, int value) {
@@ -19,7 +19,7 @@ int countPairs2(int *arr, int len, int value) {
   for (int i = 0; i <= len; i++) {
     if (arr[i] > value / 2)
       break;
-    for (int j = rig; j > i; j--) {
+    for (int j = right; j > i; j--) {
       if (arr[i] + arr[j] == value) {
         count++;
       }
